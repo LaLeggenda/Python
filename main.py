@@ -57,6 +57,9 @@ User = Person(25, "Via Emilia 80, Bologna", "+393334592351", "Ciceruacchio", "Al
 User2 = Candidate(25, "Via Emilia 80, Bologna", "+393334592351", "Ciceruacchio", "Altobelli","you know nothing, Jon Snow", "Engineering" ,"30000" ,"2 months" ,"quasi un tecnico")
 
 Job1 = Job("Project Manager", "CNH", "coordinator of activities","na cos a piacer", "Modena")
+Job2 = Job("Riggiularo", "Sassuolo riggiole snc", "coordinator of riggiole","riggiole cutting", "Sassuolo")
+Job3 = Job("Software Engineer", "Ferrari", "code writer","C,C++", "Maranello")
+
 User3 = Recruiter(25, "Via Emilia 80, Bologna", "+393334592351", "Carmelina", "Lestofanti","you know nothing, Jon Snow", Job1)
 
 print(User.catch_phrase);
@@ -65,3 +68,10 @@ print(User2.degree);
 User2.Application();
 print(User3.Job.company);
 print(User3.jobposting());
+listJobs= [];
+listJobs.append(Job1);
+listJobs.append(Job2);
+listJobs.append(Job3);
+
+for obj in listJobs:
+  print(obj.title, sep=' ')
