@@ -1,6 +1,4 @@
-#from bs4 import BeautifulSoup
-#soup = BeautifulSoup("lalalalalal", "html.parser")
-#ciao
+
 class Job:
   def __init__(self, title, company, description, skills, location):
     self.company = company
@@ -75,3 +73,5 @@ listJobs.append(Job3);
 
 for obj in listJobs:
   print(obj.title, sep=' ')
+
+
